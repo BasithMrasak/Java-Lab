@@ -17,7 +17,7 @@ interface Drawable
     public void draw();
 }
 
-class Rectangle
+class Rectangle implements Printable,Computable,Drawable
 {
    double length,width;
    public Rectangle(double length, double width)
@@ -62,7 +62,7 @@ class Rectangle
    }
 }
 
-class Sphere
+class Sphere implements Printable,Computable,Drawable
 {
     double radius;
     public Sphere(double radius)
